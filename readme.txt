@@ -1,6 +1,6 @@
 Bonjour !
 
-Pour lancer le projet veuillez suivre attentivements les étapes suivantes: ( ~ 5 minutes )
+Pour lancer le projet veuillez suivre attentivements les étapes suivantes: ( ~ 2-5 minutes )
 
 Pour commencer :
 Lancer une invite de commande : 
