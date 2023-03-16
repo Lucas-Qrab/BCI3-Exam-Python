@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="W-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename= 'assets/images/icon.png') }}">
+    <title>Exo3</title>
+</head>
+<body>
+    <section class="main-body">
+        <h1>Aperçu de votre configuration machine</h1>
+        <div class="container">
+            <h2>Informations sur votre machine</h2>
+            <div class="row">
+                <div class="cards">
+                    <h3>Systeme d'exploitation</h3>
+                    <p>{{ container.get("os") }}</p>
+                </div>
+                <div class="cards">
+                    <h3>Architecture</h3>
+                    <p>{{ container.get("architecture") }}</p>
+                </div> 
+            </div>
+            <h2>Détails techniques</h2>
+            <h3>Processeur</h3>
+            <div class="row">
+                <div class="cards">
+                    <h4>Modèle</h4>
+                    <p>{{ container.get("processor") }}</p>
+                </div>
+                <div class="cards">
+                    <h4>Fréquence</h4>
+                    <p>{{ container.get("frequency") }}GHz</p>
+                </div>
+                <div class="cards">
+                    <h4>Nombre de coeurs physiques</h4>
+                    <p>{{ container.get("cpu") }}</p>
+                </div>
+                <div class="cards">
+                    <h4>Nombre de coeurs logiques</h4>
+                    <p>{{ container.get("thread") }}</p>
+                </div>
+            </div>
+            <h3>Mémoire</h3>
+            <div class="row">
+                <div class="cards">
+                    <h4>Capacité totale</h4>
+                    <p>{{ container.get("ram") }} Gb</p>
+                </div>
+                <div class="cards">
+                    <h4>Capacité disponible</h4>
+                    <p>{{ container.get("ramAvailable") }} Gb</p>
+                </div>
+            </div>
+            <h3>Disque</h3>
+            <div class="row">
+                <div class="cards">
+                    <h4>Capacité totale</h4>
+                    <p>{{ container.get("disk") }} Go</p>
+                </div>
+            </div>  
+        </div>  
+    </section>
+</body>
+
+</html>
