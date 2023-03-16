@@ -11,3 +11,15 @@ Une fois la console ouverte taper :
 sinon veuillez vous installer python en suivant la documentation officiel 
 
 Une fois cela fait, cloner le projet git, dans la console taper :
+git clone https://github.com/Lucas-Qrab/BCI3-Exam-Python
+
+Une fois le projet ouvert, ouvrir un terminal et lancer l'installation de toutes les dépendances :
+pip install psutil 
+pip install flask 
+
+Une fois fait il ne reste plus qu'a lancer le projet, 
+python Main.py
+
+Pour le reste le programme vous guidera pour son utilisation ^^
+
+Merci !
